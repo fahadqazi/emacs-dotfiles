@@ -1,0 +1,38 @@
+#+title: Example Org File
+#+author: Fahad Qazi
+#+startup: Emacs org-mode Notes
+#+date: 18-02-2023
+
+* Learning Emacs
+
+* Questions
+** Code review - how to duplicate a line?
+** Issue with visual line mode
+   - the sentence under the heading doesn't wrap under the heading
+** How to quickly jump into some notes or Project?
+** Doing `M-x package-install`
+   - installs packages but then you don’t really know which packages are installed? If you re-install then come config doesn’t work - is there a work around to this?
+** Is there a strategy you use to have access to your notes on the cloud?
+** How to get started with literate config?
+** How to set tab width that the pointer jumps to?
+** Literate configuration?
+** Creating a note taking config?
+   - Quick capture?
+   - Nice headings? Formatting etc
+   - Should this be ordered by date and be one page alone?
+
+* How to solve a particular problem in org-mode?
+  1. I want to be able to track tickets.
+  2. I want to also be able to track my daily work.
+
+* How to do this?
+  1. How do I insert current time somewhere in emacs?
+  2. Can I use tags in a table?
+  3. Can I filter a table using tags?
+  4. How to go syntax highlighting working for something like Go? Add lanugage to org-babel?
+  5. Why does my Label for Tracking go on the next line in org-agenda view
+  6. What don't the bullet's show up in my org files by default?
+  7. Getting some warning about path - needs optimisation
+  8. In code block when I press enter the code gets indented
+  9. How to get the pointer back to previous locations?
+  10. How to setup your dotfiles?
