@@ -19,13 +19,19 @@
   4. Getting some warning about path - needs optimisation
   5. In code block when I press enter the code gets indented
   6. How to get the pointer back to previous locations?
-  7. Can I use tags in a table?
-  8. Can I filter a table using tags?
-  9. How to setup your dotfiles?
+  7. How to jump between brackets?
+  8. How to find next of previous occurance of the word?
+  9. Issues with using a different font and also horizontal shifting of text?
+  10. Better short cuts for previous and next buffers?
+  11. How to fold functions or sexp's?
+  12. Can I use tags in a table?
+  13. Can I filter a table using tags?
+  14. How to setup your dotfiles?
 * Setup:
   1. I want to be able to track tickets.
   2. I want to also be able to track my daily work.
-  3. Literate configuration?
+  3. Literate configuration? Separate out different areas of config?
+  4. Setting up LSP mode?
 #+begin_src c
   // How to select only in a particular range?
   func hello() {}

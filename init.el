@@ -12,14 +12,18 @@
 ;;(global-visual-line-mode t)
 (setq visible-bell nil)
 (setq org-agenda-include-diary t)
+
+;; 27th-Feb Fahad
 (setq org-adapt-indentation t
       org-hide-leading-stars t)
 
 
+;; 27th-Feb Fahad
 ;; Experimental time tracking stuff
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 
+;; 27th-Feb Fahad
 ;; Adding denote
 (setq denote-directory (expand-file-name "~/time-tracking/"))
 
@@ -53,10 +57,12 @@
 (require 'use-package)
 (setq use-package-always-ensure nil)
 
+;; 27th-Feb Fahad
+;; Do I need this?
 (column-number-mode)
 
 (global-display-line-numbers-mode t)
-;;(setq linum-format "%d ")
+
 
 (defun fahad/toggle-line-numbers ()
   "Toggles display of line numbers"
@@ -104,12 +110,12 @@
   :ensure t
   :hook (prog-mode . rainbow-delimiters-mode))
 
+;; 27th-Feb Fahad
+;; Why don't these work on every load?
 (use-package org-bullets
   :ensure t
   :config
   (org-bullets-mode 1))
-
-(setq lsp-keymap-prefix "s-l")
 
 ;; Should I get rid of this "M-3" - I added this because I coudn't type #
 (global-set-key (kbd "M-3") #'(lambda () (interactive) (insert "#"))):
@@ -131,7 +137,6 @@
 	 (file+headline "gtd.org" "Tasks")
          "* TODO %?")))
 
-;; Todo keywords. Change these to your liking
 (setq org-todo-keywords
     '((sequence "TODO(t)" "|" "DONE(d)" "CANCELLED(c)")))
 
@@ -160,17 +165,24 @@
   (next-line 1)
   (yank))
 
-;; (defun fahad/scroll-half-page-forwards-and-center ()
-;;   "Scroll half the page forward and center point"
-;;   (interactive)
-;;   (View-scroll-half-page-forward)
-;;   (recenter-top-bottom))
 
-;; (defun fahad/scroll-half-page-backwards-and-center ()
-;;   "Scroll half the page and center point"
-;;   (interactive)
-;;   (View-scroll-half-page-backward)
-;;   (recenter-top-bottom))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; These are the functions that I wrote but didn't work	 ;;
+;; 							 ;;
+;; (defun fahad/scroll-half-page-forwards-and-center ()	 ;;
+;;   "Scroll half the page forward and center point"	 ;;
+;;   (interactive)					 ;;
+;;   (View-scroll-half-page-forward)			 ;;
+;;   (recenter-top-bottom))				 ;;
+;; 							 ;;
+;; (defun fahad/scroll-half-page-backwards-and-center () ;;
+;;   "Scroll half the page and center point"		 ;;
+;;   (interactive)					 ;;
+;;   (View-scroll-half-page-backward)			 ;;
+;;    (recenter-top-bottom))				 ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Copies these
 (defun fahad/scroll-down-half-page ()
   "scroll down half a page while keeping the cursor centered"
   (interactive)
