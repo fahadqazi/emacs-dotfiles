@@ -28,8 +28,8 @@
   13. Can I filter a table using tags?
   14. How to setup your dotfiles?
 * Setup:
-  1. I want to be able to track tickets.
-  2. I want to also be able to track my daily work.
+  1. System for tracking tickets, org-mode?
+  2. Track daily work
   3. Literate configuration? Separate out different areas of config?
   4. Setting up LSP mode?
 #+begin_src c
