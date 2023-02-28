@@ -19,14 +19,17 @@
   4. Getting some warning about path - needs optimisation
   5. In code block when I press enter the code gets indented
   6. How to get the pointer back to previous locations?
-  7. How to jump between brackets?
-  8. How to find next of previous occurance of the word?
-  9. Issues with using a different font and also horizontal shifting of text?
-  10. Better short cuts for previous and next buffers?
-  11. How to fold functions or sexp's?
-  12. Can I use tags in a table?
-  13. Can I filter a table using tags?
-  14. How to setup your dotfiles?
+  7. Better way to select text?
+  8. Better way to create a temp buffer? (comparing two bits of code)
+  9. How to jump between brackets?
+  10. How to compare to snippets of text?
+  11. How to find next of previous occurance of the word?
+  12. Issues with using a different font and also horizontal shifting of text?
+  13. Better short cuts for previous and next buffers?
+  14. How to fold functions or sexp's?
+  15. Can I use tags in a table?
+  16. Can I filter a table using tags?
+  17. How to setup your dotfiles?
 * Setup:
   1. System for tracking tickets, org-mode?
   2. Track daily work
