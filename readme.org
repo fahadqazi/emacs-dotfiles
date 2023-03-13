@@ -3,45 +3,46 @@
 #+startup: Emacs org-mode Notes
 #+date: 18-02-2023
 
+* todos [0/22]
+  - [ ] Try to setup email
+  - [ ] Try to split up my config
+  - [ ] Clean up some bits of the config
+  - [ ] How to separate out different projects being worked on at the same time?
+  - [ ] Still looking for a good note taking strategy
+  - [ ] How to copy how code block?
+  - [ ] Make the UI a bit more appealing
+  - [ ] Tips on some projects I could work on to learn emacs
+  - [ ] Folding a function
+  - [ ] Suitable shortcuts for prev & next buffer
+  - [ ] Just between matching brackets
+  - [ ] Fix path wanring that comes up on emacs launch
+  - [ ] Code blocks indent weirdly - can I add golang in the org babel?
+  - [ ] Code review - how to duplicate a line? Unfortunately lost it!
+  - [ ] How to compare to snippets of text?
+  - [ ] In code block when I press enter the code gets indented
+  - [ ] How to get the pointer back to previous locations? Just between change list? Mark list?
+  - [ ] Better way to select text? Select whole line?
+  - [ ] How to find next of previous occurance of the word?
+  - [ ] How to do `delete until` and `delete in`?
+  - [ ] Issues with using a different font and also horizontal shifting of text?
+
 * Questions
-  - Code review - how to duplicate a line?
-  - Is there a quick jump feature? How to quickly jump into some notes or Project?
-  - Quick jump to word in the doc like easy-motion in vim? OR just C-s?
-  - Doing `M-x package-install` installs packages but then you don’t really know which packages are installed? If you re-install then come config doesn’t work - is there a work around to this?
-  - Is there a strategy you use to have access to your notes on the cloud?
-  - How to set tab width that the pointer jumps to?
-  - Creating a note taking config? (i've decided to use denote for now)
-  - Is there a way to do what "o" & "O" do in vim?
-* How to do these:
-  1. How do I insert current time somewhere in emacs?
-  2. How to go syntax highlighting working for something like Go? Add lanugage to org-babel?
-  3. What don't the bullet's show up in my org files by default?
-  4. Getting some warning about path - needs optimisation
-  5. In code block when I press enter the code gets indented
-  6. How to get the pointer back to previous locations?
-  7. Better way to select text?
-  8. Better way to create a temp buffer? (comparing two bits of code)
-  9. How to jump between brackets?
-  10. How to compare to snippets of text?
-  11. How to find next of previous occurance of the word?
-  12. Issues with using a different font and also horizontal shifting of text?
-  13. Better short cuts for previous and next buffers?
-  14. How to fold functions or sexp's?
-  15. Can I use tags in a table?
-  16. Can I filter a table using tags?
-  17. How to setup your dotfiles?
-* Setup:
-  1. System for tracking tickets, org-mode?
-  2. Track daily work
-  3. Literate configuration? Separate out different areas of config?
-  4. Setting up LSP mode?
-#+begin_src c
-  // How to select only in a particular range?
-  func hello() {}
-#+end_src
-#+begin_src javascript
-  // how to insert pointer inside the function
-  function hello() {
-      
-    }
-#+end_src
+  - Doing `M-x package-install` installs packages but then you don’t
+    really know which packages are installed? If you re-install then
+    come config doesn’t work - is there a work around to this?
+
+* My Todos [0/2]
+  - [ ] Is there a strategy you use to have access to your notes on the
+    cloud? /Need to look at syncThing/
+  - [ ] System for tracking tickets, org-mode?
+  - [ ] Track daily work
+  - [ ] Literate configuration? Separate out different areas of config?
+  - [ ] Setting up LSP mode?
+  
+* My Record
+  - How do I insert current time somewhere in emacs? (C-c .)
+
+* Code Blocks
+  #+begin_src javascript
+    function hello() {}
+  #+end_src

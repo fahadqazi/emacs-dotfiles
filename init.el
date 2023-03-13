@@ -109,6 +109,8 @@
     :config
     (which-key-mode))
 
+
+;; Need to add these
 ;; `consult', `orderless', `embark' (the latter for the future) 
 
 (use-package rainbow-delimiters
@@ -117,8 +119,6 @@
 
 (use-package org-bullets
   :hook (( org-mode ) . org-bullets-mode))
-
-
 
 (global-set-key (kbd "M-3") #'(lambda () (interactive) (insert "#"))):
 ;;(global-set-key (kbd "C-c l") #'org-store-link)
@@ -158,6 +158,7 @@
       (whitespace-mode -1)
     (whitespace-mode)))
 
+;; Need some help with this function again
 (defun fahad/duplicate-line ()
   "Duplicate current line"
   (interactive)
@@ -196,6 +197,8 @@
   (move-end-of-line nil)
   (newline-and-indent))
 
+
+;; Pasted it as is, but I intend to clean this up!
 (setq org-capture-templates
       `(("b" "Basic task for future review" entry
          (file+headline "tasks.org" "Tasks to be reviewed")
@@ -271,65 +274,6 @@
         ;;  :prepend t
         ;;  :empty-lines 1)
         ))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (use-package prettier-js							     ;;
-;;   :ensure t)									     ;;
-;; 										     ;;
-;; (use-package add-node-modules-path						     ;;
-;;   :ensure t									     ;;
-;;   :hook (typescript-mode . add-node-modules-path))				     ;;
-;; 										     ;;
-;; (add-hook 'web-mode-hook #'(lambda ()					     ;;
-;;                              (enable-minor-mode				     ;;
-;;                               '("\\.jsx?\\'" . prettier-js-mode))		     ;;
-;; 			     (enable-minor-mode					     ;;
-;;                               '("\\.tsx?\\'" . prettier-js-mode))))		     ;;
-;; 										     ;;
-;; (eval-after-load 'web-mode							     ;;
-;;   '(progn									     ;;
-;;      (add-hook 'web-mode-hook #'add-node-modules-path)			     ;;
-;;      (add-hook 'web-mode-hook #'prettier-js-mode)))				     ;;
-;; 										     ;;
-;; (use-package flycheck							     ;;
-;;   :ensure t									     ;;
-;;   :hook ((after-init . global-flycheck-mode)))				     ;;
-;; 										     ;;
-;; (use-package company								     ;;
-;;   :ensure t									     ;;
-;;   :hook ((after-init . global-company-mode)))				     ;;
-;; 										     ;;
-;; (use-package typescript-mode							     ;;
-;;   :ensure t									     ;;
-;;   :after (flycheck)								     ;;
-;;   :config									     ;;
-;;   (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode)))		     ;;
-;; 										     ;;
-;; (use-package tide								     ;;
-;;   :ensure t									     ;;
-;;   :after (typescript-mode flycheck)						     ;;
-;;   :hook ((typescript-mode . tide-setup)					     ;;
-;; 	 (typescript-mode . tide-hl-identifier-mode)				     ;;
-;; 	 )									     ;;
-;;   :config (flycheck-add-next-checker 'typescript-tide 'javascript-eslint))	     ;;
-;; 										     ;;
-;; (use-package lsp-mode							     ;;
-;;   :init									     ;;
-;;   (setq lsp-keymap-prefix "C-c l")						     ;;
-;;   :bind (:map lsp-mode-map							     ;;
-;; 	      ("C-c l" . lsp-command-map)					     ;;
-;; 	      ("C-c d" . lsp-describe-thing-at-point)				     ;;
-;; 	      ("C-c a" . lsp-execute-code-action))				     ;;
-;;   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)	     ;;
-;;          (typescript-mode . lsp)						     ;;
-;;          (lsp-mode . lsp-enable-which-key-integration))			     ;;
-;;   :commands lsp)								     ;;
-;; 										     ;;
-;; (use-package lsp-ui :commands lsp-ui-mode)					     ;;
-;; (use-package helm-lsp :commands helm-lsp-workspace-symbol)			     ;;
-;; (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)			     ;;
-;; (use-package lsp-treemacs :commands lsp-treemacs-errors-list)		     ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; (use-package evil									        ;;
